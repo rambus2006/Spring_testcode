@@ -2,11 +2,12 @@ package hello.core.member;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 //dip 위반하는 테스트 코드
 public class MemberServiceTest {
-    MemberService memberService;
 
+    MemberService memberService;
     @Test
     void join(){
         //given(~환경일때)
